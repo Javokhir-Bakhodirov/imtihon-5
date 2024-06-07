@@ -1,0 +1,91 @@
+.header {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.link {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: white;
+	transition: 0.3s color linear;
+}
+
+.link:hover {
+	color: #f1b538;
+}
+
+.link:not(:first-child) {
+	margin-left: 15px;
+}
+
+.site-header {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	background-color: black;
+	width: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Jomolhari", serif;
+	background-color: black;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.info-section {
+	padding-top: 67px;
+	color: #fff;
+}
+
+.info {
+	padding: 0 90px;
+	padding-top: 130px;
+	padding-bottom: 136px;
+}
+
+.content {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+
+.content__title {
+	font-weight: 400;
+	font-family: serif;
+	font-size: 40px;
+}
+
+.content__tag {
+	font-size: 20px;
+	font-weight: 400;
+}
+.content__img-box img {
+	object-fit: fill;
+}
+.content__img-box {
+	margin-bottom: 63px;
+	text-align: center;
+}
+
+.content__description {
+	width: 820px;
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: 400;
+}

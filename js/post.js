@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			.then((response) => response.json())
 			.then((data) => {
 				console.log("Success:", data);
+				location.replace(location.origin + "/index.html");
 			})
 			.catch((error) => {
 				console.error("Error:", error);

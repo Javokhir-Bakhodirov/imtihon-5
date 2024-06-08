@@ -5,11 +5,12 @@ const $loginLink = document.getElementById("login-link");
 function fetchBlogs() {
 	fetch("https://blogpost-server-production-d92d.up.railway.app/api/v1/blogs")
 		.then((res) => res.json())
-		.then((data) => renderBlogs(data.data[0]));
+		.then((data) => renderBlogs(data.data));
 }
 
 function renderBlogs(data) {
-	Array(data).forEach((blog) => {
+	console.log(data);
+	data.forEach((blog) => {
 		console.log(blog);
 		const $item = document.createElement("li");
 		$item.classList.add("list__item", "item");

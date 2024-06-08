@@ -9,6 +9,9 @@
 	margin-bottom: 34px;
 }
 .article__list {
+	display: flex;
+	gap: 25px;
+	overflow: auto;
 }
 
 .list__item {

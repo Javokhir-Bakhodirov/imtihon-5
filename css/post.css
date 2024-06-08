@@ -1,0 +1,154 @@
+body {
+	background: #000;
+	color: #fff;
+}
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-top: 8px;
+	display: flex;
+	gap: 20px;
+}
+
+.sidebar {
+	height: 873px;
+	width: 320px;
+	background-color: #f5c147;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	border-radius: 16px;
+	/* position: fixed;
+	left: 0; */
+}
+.dash {
+	color: #000;
+	font-family: serif;
+	font-size: 30px;
+	font-weight: 400;
+}
+.profile {
+	display: flex;
+	flex-direction: column;
+	color: #000;
+	background-color: #fff;
+	width: 236px;
+	height: 85px;
+	border-radius: 16px;
+}
+.profile span {
+	opacity: 0.5;
+	margin-top: -10px;
+}
+.author__name {
+	color: #000;
+	font-family: serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.create__btn {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 34px;
+	outline: none;
+	background: #000;
+	font-family: serif;
+	padding: 17px 45px 17px 13px;
+	border-radius: 16px;
+}
+
+.sigOut {
+	color: #000;
+	font-size: 20px;
+	font-family: serif;
+	font-weight: 400;
+	margin-bottom: 34px;
+}
+
+.main-container {
+	width: 1070px;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid #fbbd08;
+}
+
+.main__title {
+	width: 100%;
+	padding-bottom: 30px;
+	color: #fff;
+	font-family: serif;
+	font-weight: 600;
+	font-style: 35px;
+	border-bottom: 1px solid #fff;
+}
+textarea {
+	resize: none;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+form label {
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+form input,
+form textarea,
+form button {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #444;
+	border-radius: 5px;
+	font-size: 1em;
+	width: 100%;
+	outline: none;
+}
+
+form input,
+form textarea {
+	width: calc(100% - 22px);
+}
+
+form textarea {
+	height: 100px;
+}
+
+form button {
+	width: fit-content;
+	background-color: #fbbd08;
+	border: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	align-self: flex-start;
+}
+
+form button:hover {
+	background-color: #ffa000;
+}
+
+#image {
+	flex: 3;
+}
+#tag {
+	flex: 2;
+}
+
+.tag-btn {
+	flex: 1;
+}
+
+.submit-btn {
+	margin-left: auto;
+	margin-right: auto;
+}

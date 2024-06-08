@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Post</title>
+		<link rel="stylesheet" href="../css/post.css" />
+		<link rel="stylesheet" href="../css/normilze.css" />
+	</head>
+	<body>
+		<div class="container">
+			<aside class="sidebar">
+				<div class="author__box">
+					<h2 class="dash">Dashboard</h2>
+					<div class="profile">
+						<p class="author__name">ali</p>
+						<span class="author__sub">user</span>
+					</div>
+
+					<button class="create__btn">Create Post</button>
+				</div>
+
+				<a class="sigOut">Sign Out</a>
+			</aside>
+			<main class="main-content">
+				<div class="main-container">
+					<h2 class="main__title">Create New Post</h2>
+					<form>
+						<div class="title">
+							<label for="title">Post title</label>
+							<input type="text" id="title" name="title" />
+						</div>
+
+						<div class="image-tag">
+							<label for="image">Post image</label>
+							<input type="url" id="image" name="image" />
+							<label for="tag">Post tag</label>
+							<input type="text" id="tag" name="tag" />
+							<button class="tag-btn" type="submit">submit</button>
+						</div>
+
+						<div class="description">
+							<label for="description">Post description</label>
+							<textarea id="description" name="description"></textarea>
+						</div>
+
+						<button class="submit-btn" type="submit">Create Post</button>
+					</form>
+				</div>
+			</main>
+		</div>
+		<script src="../js/post.js"></script>
+	</body>
+</html>

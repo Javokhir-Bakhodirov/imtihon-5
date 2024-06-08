@@ -409,6 +409,12 @@ template {
   margin-bottom: 34px;
 }
 
+.article__list {
+  display: flex;
+  gap: 25px;
+  overflow: auto;
+}
+
 .list__item {
   background-color: #171717;
   border: 2px solid #f1b538;

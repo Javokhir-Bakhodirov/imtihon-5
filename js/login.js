@@ -25,6 +25,7 @@ function logIn(e) {
 		.then((data) => {
 			console.log(data);
 			localStorage.setItem("access_token", data.data.token);
+			location.replace(location.origin + "/pages/post.html");
 		});
 }
 

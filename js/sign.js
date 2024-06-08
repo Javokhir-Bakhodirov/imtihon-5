@@ -37,9 +37,10 @@ function userRegister(e) {
 	)
 		.then((res) => res.json())
 		.then((data) => {
+			console.log(data);
 			location.replace(location.origin + "/pages/login.html");
 		});
 }
 
 $loginLink.href = location.origin + "/pages/login.html";
-$loginLink.target = "_blank";
+// $loginLink.target = "_blank";

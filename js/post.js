@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		description: "",
 		image: "",
 		tags: [],
-		author: "Ibrokhim Jalalov",
 	};
 
 	tagBtn.addEventListener("click", function (event) {
@@ -33,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
-					Authorization: localStorage.getItem("access_token"),
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
 				},
 				body: JSON.stringify(postData),
 			}
 		)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log("Success:", data)
+				console.log("Success:", data);
 			})
 			.catch((error) => {
 				console.error("Error:", error);
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-let token = localStorage.getItem("access_token");
+let token = localStorage.getItem("token");
 let user = token.split(".");
 let userInfo = JSON.parse(atob(user[1]));
 

@@ -13,7 +13,7 @@ body {
 
 .sidebar {
 	height: 873px;
-	width: 320px;
+	width: 600px;
 	background-color: #f5c147;
 	display: flex;
 	align-items: center;
@@ -31,13 +31,15 @@ body {
 	font-weight: 400;
 }
 .profile {
+	width: 220px;
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 	color: #000;
 	background-color: #fff;
-	width: 236px;
 	height: 85px;
 	border-radius: 16px;
+	padding-left: 15px;
 }
 .profile span {
 	opacity: 0.5;
@@ -70,7 +72,7 @@ body {
 }
 
 .main-container {
-	width: 1070px;
+	width: 960px;
 }
 
 input:focus,
@@ -102,8 +104,7 @@ form label {
 }
 
 form input,
-form textarea,
-form button {
+form textarea {
 	margin-bottom: 20px;
 	padding: 10px;
 	background-color: #fff;
@@ -137,18 +138,29 @@ form button:hover {
 	background-color: #ffa000;
 }
 
+.image-tag {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
 #image {
-	flex: 3;
+	width: 450px;
 }
 #tag {
-	flex: 2;
+	width: 300px;
 }
 
 .tag-btn {
-	flex: 1;
+	width: 100px;
 }
 
 .submit-btn {
 	margin-left: auto;
 	margin-right: auto;
+}
+.div {
+	display: flex;
+	flex-direction: column;
 }

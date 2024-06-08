@@ -24,10 +24,10 @@ function logIn(e) {
 		.then((res) => res.json())
 		.then((data) => {
 			console.log(data);
-			localStorage.setItem("access_token", data.data.token);
+			localStorage.setItem("token", data.data.token);
 			location.replace(location.origin + "/pages/post.html");
 		});
 }
 
 $signLink.href = location.origin + "/pages/sign.html";
-$signLink.target = "_blank";
+// $signLink.target = "_blank";

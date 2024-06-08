@@ -37,7 +37,6 @@ function userRegister(e) {
 	)
 		.then((res) => res.json())
 		.then((data) => {
-			console.log(data);
 			location.replace(location.origin + "/pages/login.html");
 		});
 }

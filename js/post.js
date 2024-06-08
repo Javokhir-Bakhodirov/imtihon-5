@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	tagBtn.addEventListener("click", function (event) {
 		event.preventDefault();
-		const tag = document.getElementById("tag").value;
+		const tag = document.getElementById("tag").value.trim();
 		if (tag && !postData.tags.includes(tag)) {
 			postData.tags.push(tag);
 		}
@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	form.addEventListener("submit", function (event) {
 		event.preventDefault();
-		postData.title = document.getElementById("title").value;
-		postData.description = document.getElementById("description").value;
-		postData.image = document.getElementById("image").value;
+		postData.title = document.getElementById("title").value.trim();
+		postData.description = document.getElementById("description").value.trim();
+		postData.image = document.getElementById("image").value.trim();
 
 		console.log("Post data:", postData);
 

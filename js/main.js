@@ -10,6 +10,7 @@ function fetchBlogs() {
 
 function renderBlogs(data) {
 	console.log(data);
+
 	data.forEach((blog) => {
 		const $item = document.createElement("li");
 		$item.classList.add("list__item", "item");

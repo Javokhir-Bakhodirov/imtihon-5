@@ -83,3 +83,14 @@ input:focus {
 	cursor: pointer;
 	color: blue;
 }
+
+.img-circle {
+	width: 300px;
+	height: 90px;
+	background-color: #000;
+	border-radius: 50px;
+}
+
+.logo {
+	margin-bottom: 32px;
+}

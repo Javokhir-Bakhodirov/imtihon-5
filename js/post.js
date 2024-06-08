@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		const tag = document.getElementById("tag").value;
 		if (tag && !postData.tags.includes(tag)) {
 			postData.tags.push(tag);
-			console.log("Tag added:", tag);
-			document.getElementById("tag").value = ""; // Clear the tag input after adding
 		}
 	});
 
@@ -43,11 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			.then((response) => response.json())
 			.then((data) => {
 				console.log("Success:", data);
-				alert("Post created successfully!");
 			})
 			.catch((error) => {
 				console.error("Error:", error);
-				alert("Error creating post!");
 			});
 	});
 });

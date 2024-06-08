@@ -18,6 +18,9 @@
 	background-color: #171717;
 	border: 2px solid #f1b538;
 	width: 270px;
+	display: block;
+	display: flex;
+	flex-direction: column;
 }
 .item img {
 	margin-bottom: 8px;
@@ -30,13 +33,14 @@
 	font-weight: 400;
 	font-size: 23px;
 	margin-bottom: 8px;
+	height: 52px;
 }
-.Item__text {
-	font-size: 11px;
+.item__text {
+	font-size: 15px;
 	font-weight: 400;
 	height: 57px;
-	overflow: hidden;
 	margin-bottom: 8px;
+	height: 36px;
 }
 .item__prof {
 	margin-top: 12px;
@@ -59,4 +63,9 @@
 .author__sub {
 	font-size: 13px;
 	opacity: 0.5;
+}
+
+.main-img {
+	height: 172px;
+	display: block;
 }

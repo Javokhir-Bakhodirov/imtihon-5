@@ -21,8 +21,13 @@ function renderBlogs(data) {
       width="266"
       height="172"/> </a>
       <div class="item__content">
-        <h3 class="item__title">${blog.title}</h3>
-        <p class="item__text">${blog.description}</p>
+        <h3 title = "${blog.title}"  class="item__title">${truncateArticle(
+			blog.title,
+			(maxLength = 30)
+		)}</h3>
+        <p title = "${blog.description}" class="item__text">${truncateArticle(
+			blog.description
+		)}</p>
         <div class="item__prof">
           <img
             src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80"
@@ -55,3 +60,10 @@ $signLink.addEventListener("click", function () {
 $loginLink.addEventListener("click", function () {
 	location.replace(location.origin + "/pages/login.html");
 });
+
+function truncateArticle(article, maxLength = 60) {
+	if (article.length > maxLength) {
+		return article.slice(0, maxLength - 3) + "...";
+	}
+	return article;
+}

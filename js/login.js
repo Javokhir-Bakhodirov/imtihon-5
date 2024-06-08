@@ -29,6 +29,5 @@ function logIn(e) {
 		});
 }
 
-$signLink.addEventListener("click", function () {
-	location.replace(location.origin + "/pages/sign.html");
-});
+$signLink.href = location.origin + "/pages/sign.html";
+$signLink.target = "_blank";

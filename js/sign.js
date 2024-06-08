@@ -41,6 +41,6 @@ function userRegister(e) {
 			location.replace(location.origin + "/pages/login.html");
 		});
 }
-$loginLink.addEventListener("click", function () {
-	location.replace(location.origin + "/pages/login.html");
-});
+
+$loginLink.href = location.origin + "/pages/login.html";
+$loginLink.target = "_blank";

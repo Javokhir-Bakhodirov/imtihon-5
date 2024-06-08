@@ -15,7 +15,7 @@ function renderBlogs(data) {
 		const $item = document.createElement("li");
 		$item.classList.add("list__item", "item");
 		$item.innerHTML = `
-      <a href="../pages/single.html?blog-id=${blog._id}">
+      <a href="../pages/single.html?blog-id=${blog._id}" target = "_blank">
       <img class="main-img" src=${blog.image}
       alt="img"
       width="266"
@@ -53,17 +53,14 @@ function renderBlogs(data) {
 
 fetchBlogs();
 
-$signLink.addEventListener("click", function () {
-	location.replace(location.origin + "/pages/sign.html");
-	$signLink.href = `${location.replace(location.origin + "/pages/sign.html")}`;
-});
-$loginLink.addEventListener("click", function () {
-	location.replace(location.origin + "/pages/login.html");
-});
-
+$loginLink.href = location.origin + "/pages/login.html";
+$loginLink.target = "_blank";
 function truncateArticle(article, maxLength = 60) {
 	if (article.length > maxLength) {
 		return article.slice(0, maxLength - 3) + "...";
 	}
 	return article;
 }
+
+$signLink.href = location.origin + "/pages/sign.html";
+$signLink.target = "_blank";
